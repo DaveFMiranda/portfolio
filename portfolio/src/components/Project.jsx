@@ -1,13 +1,8 @@
-export default function Nav({ links }) {
+export default function Project() {
   return (
-    <nav className="navbar navbar-expand-lg bg-secondary">
-      <div className="container-fluid">
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            {links.map((link) => link)}
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <div className="box">
+    <h2 className="box-title">Project</h2>
+    <p className="box-content">DAVE REPLACE THIS WITH AN IMAGE AND LINKS TO DEPLOYED APP AND GITHUB</p>
+</div>
   );
 }

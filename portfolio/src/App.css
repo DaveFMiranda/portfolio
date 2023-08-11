@@ -33,6 +33,25 @@
   }
 }
 
+/* Styling for box used in the Project component */
+.box {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px;
+  width: 200px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.box-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.box-content {
+  font-size: 16px;
+}
+
+
 .card {
   padding: 2em;
 }
