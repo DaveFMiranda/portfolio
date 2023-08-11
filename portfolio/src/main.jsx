@@ -8,7 +8,7 @@ import App from './App';
 import ErrorPage from './pages/ErrorPage';
 import AboutPage from './pages/AboutPage';
 // import ContactPage from './pages/ContactPage';
-// import PortfolioPage from './pages/PortfolioPage';
+import PortfolioPage from './pages/PortfolioPage';
 // import ResumePage from './pages/ResumePage';
 
 
@@ -30,10 +30,11 @@ const router = createBrowserRouter([
       //   path: 'contact',
       //   element: <ContactPage />,
       // },  
-      // {
-      //   path: 'portfolio',
-      //   element: <PortfolioPage />,
-      // },  {
+      {
+        path: 'portfolio',
+        element: <PortfolioPage />,
+      },  
+      //{
       //   path: 'resume',
       //   element: <ResumePage />,
       // },
