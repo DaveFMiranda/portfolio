@@ -1,3 +1,21 @@
+import Project from "./components/Project";
+
+export default function Portfolio() {
+    return (
+    <div>
+        <h1>Here's the project page</h1>;
+        <Project />;
+        <Project />;
+        <Project />;
+        <Project />;
+        <Project />;
+        <Project />;
+        </div>
+    );
+
+
+}
+
 // // This is a static page mocking an "About Us" section for our fake user data
 // export default function AboutPage() {
 //   return (
