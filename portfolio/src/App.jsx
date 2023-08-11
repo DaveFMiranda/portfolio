@@ -3,11 +3,15 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 function App() {
+
+// TO DO: INSERT STUFF FROM NOTES
+
   return (
     <div>
       <Header />
       <Outlet />
       <Footer />
+    {/* {DisplaySwitch(displayState)} */}
     </div>
   );
 }
