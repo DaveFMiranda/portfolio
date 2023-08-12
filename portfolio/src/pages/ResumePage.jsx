@@ -1,5 +1,21 @@
+// import resume from assets
+// onClick -- download
+// list of proficiencies at the top
+
 export default function ResumePage() {
-    return <h1>It's the resume page</h1>;
+    return (
+    <div>
+    <h1>It's the resume page</h1>
+    <p>INSERT LIST OF PROFICIENCIES</p>
+
+    <div className="pdf-container">
+  <object className="pdf-viewer" data="dave-miranda-resume-2023.pdf" type="application/pdf">You don't have a plugin for this browser.</object>
+</div>
+
+    <button type="download">Download</button>
+
+    </div>
+    );
   }
 
   // TO DO: insert link to downloadable resume
