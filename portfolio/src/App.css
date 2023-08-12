@@ -1,11 +1,10 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  width: 100%;
+  padding: 2rem 0;
   text-align: center;
 }
 
-.logo {
+/* .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
@@ -31,7 +30,39 @@
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
+} */
+
+/* Error messages */
+
+.error {
+  color: #D8000C;            /* Red color for the text to make it noticeable */
+  background-color: #FFD2D2; /* Light red background for emphasis */
+  padding: 5px;              /* Some padding to give space */
+  border-radius: 4px;        /* Rounded corners for a softer look */
+  margin-top: 5px;           /* Space between the error and the input field */
+  font-size: 0.9rem;         /* A bit smaller than regular text to differentiate */
 }
+
+/* Navbar styling */
+
+.navbar {
+  padding: 0.5rem 2rem; /* Adjusts the padding of the navbar */
+}
+
+.navbar-brand {
+  font-weight: bold; /* Makes the brand name bold */
+  font-size: 1.5rem; /* Increases the size of the brand name */
+}
+
+.nav-link {
+  margin-right: 1rem; /* Adds some spacing between links */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.nav-link:hover {
+  color: #007BFF; /* Change color on hover */
+}
+
 
 /* Styling for box used in the Project component */
 .box {
@@ -52,10 +83,10 @@
 }
 
 
-.card {
+/* .card {
   padding: 2em;
 }
 
 .read-the-docs {
   color: #888;
-}
+} */

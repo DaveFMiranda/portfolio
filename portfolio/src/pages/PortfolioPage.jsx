@@ -4,12 +4,12 @@ export default function Portfolio() {
     return (
     <div>
         <h1>Here's the project page</h1>;
-        <Project />;
-        <Project />;
-        <Project />;
-        <Project />;
-        <Project />;
-        <Project />;
+        <Project />
+        <Project />
+        <Project />
+        <Project />
+        <Project />
+        <Project />
         </div>
     );
 
