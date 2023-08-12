@@ -1,4 +1,86 @@
-// import { useState, useEffect } from 'react';
+import { useState } from 'react';
+
+//TO DO: HARDCODE NAME AND EMAIL ADDRESS IN HERE
+// use this site to hide your email address: https://www.matthewthom.as/blog/stop-email-scraping/
+
+export default function Contact() {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: '',
+
+    });
+
+    const [errors, setErrors] = useState({
+        name: '',
+        email: '',
+        message: '',
+    });
+
+    const handleInputChange = (event) => {
+        const { name, value} = event.target;
+        setFormData((prevData) => ({...prevData, [name]: value})
+        
+        );
+    };
+
+    const handleBlur = (event) => {
+        const {name, value} = event.target;
+
+        if (!value){
+            setErrors((prevErrors) => ({...prevErrors, [name]: `${name[0].toUpperCase() + name.slice(1)} is required` }));
+        } else {
+            setErrors((prevErrors) => ({...prevErrors, [name]: ''}));
+        }
+
+        if (name === 'email' && value && !/\S+@\S+\.\S+/.test(value)) {
+            etErrors((prevErrors) => ({ ...prevErrors, email: 'Email address is invalid' }));
+        }
+
+    };
+    return (
+        <form>
+          <div>
+            <label>Name:</label>
+            <input
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleInputChange}
+              onBlur={handleBlur}
+            />
+            {errors.name && <div className="error">{errors.name}</div>}
+          </div>
+    
+          <div>
+            <label>Email:</label>
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleInputChange}
+              onBlur={handleBlur}
+            />
+            {errors.email && <div className="error">{errors.email}</div>}
+          </div>
+    
+          <div>
+            <label>Message:</label>
+            <textarea
+              name="message"
+              value={formData.message}
+              onChange={handleInputChange}
+              onBlur={handleBlur}
+            ></textarea>
+            {errors.message && <div className="error">{errors.message}</div>}
+          </div>
+    
+          <button type="submit">Submit</button>
+        </form>
+      );
+
+
+}
 // // Bringing in the required component from 'react-router-dom' for linking between pages and getting the current param variable's value from URL
 // import { useParams, Link } from 'react-router-dom';
 // import Profile from '../components/UI/ProfileSections/ProfileDetailed';
