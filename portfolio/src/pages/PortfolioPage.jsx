@@ -1,15 +1,13 @@
 import Project from "../components/Project";
+import projects from "../data/projects"
 
 export default function Portfolio() {
     return (
     <div>
-        <h1>Here's the project page</h1>;
-        <Project />;
-        <Project />;
-        <Project />;
-        <Project />;
-        <Project />;
-        <Project />;
+        <h1>Here's the project page</h1>
+     {Projects.map(({name, description, img, ghLink, deployLink}) => <Project />
+     
+     )}
         </div>
     );
 
