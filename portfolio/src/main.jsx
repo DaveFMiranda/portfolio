@@ -7,9 +7,9 @@ import './index.css';
 import App from './App';
 import ErrorPage from './pages/ErrorPage';
 import AboutPage from './pages/AboutPage';
-// import ContactPage from './pages/ContactPage';
+import ContactPage from './pages/ContactPage';
 import PortfolioPage from './pages/PortfolioPage';
-// import ResumePage from './pages/ResumePage';
+import ResumePage from './pages/ResumePage';
 
 
 const router = createBrowserRouter([
@@ -26,18 +26,18 @@ const router = createBrowserRouter([
         path: 'about',
         element: <AboutPage />,
       },
-      // {
-      //   path: 'contact',
-      //   element: <ContactPage />,
-      // },  
+      {
+        path: 'contact',
+        element: <ContactPage />,
+      },  
       {
         path: 'portfolio',
         element: <PortfolioPage />,
       },  
-      //{
-      //   path: 'resume',
-      //   element: <ResumePage />,
-      // },
+      {
+        path: 'resume',
+        element: <ResumePage />,
+      },
     ],
   },
 ]);

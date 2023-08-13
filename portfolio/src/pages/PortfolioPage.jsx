@@ -17,6 +17,11 @@ export default function Portfolio() {
       ))}
     </div>
   );
+
+  
+
+
+
 }
 
 // // This is a static page mocking an "About Us" section for our fake user data

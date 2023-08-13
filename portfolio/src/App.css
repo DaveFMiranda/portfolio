@@ -1,11 +1,10 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  width: 100%;
+  padding: 2rem 0;
   text-align: center;
 }
 
-.logo {
+/* .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
@@ -31,7 +30,92 @@
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
+} */
+
+
+/* styling for the about me page */
+.imageContainer {
+  width: 20%;
+  height: 50vh; /* 50% of the viewport height */
+  display: flex;
+  align-items: center; /* vertically center */
+  justify-content: center; /* horizontally center */
+  overflow: hidden; /* in case the image exceeds the container's bounds, it won't be visible */
+
 }
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.textContainer {
+  width: 80%;
+  padding: 1rem; /* optional padding for the text */
+}
+
+.imageContainer img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* keeps the aspect ratio of the image while filling the dimension */
+  align-items: flex-start;
+}
+
+.textContainer p {
+  font-size: 1.5em; /* makes the text larger */
+  font-weight: bold; /* makes the text bold */
+  margin: 0; /* removes default margin */
+  text-align: left;
+}
+/* styling for the resume pdf on the resume page */
+
+.pdf-container {
+  width: 80%;                 /* Width of the container */
+  max-width: 800px;           /* Maximum width it can stretch to */
+  height: 600px;              /* Fixed height for the container */
+  margin: 40px auto;          /* Center the container on the page */
+  border: 1px solid #ccc;     /* A light border around the container */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);  /* A subtle shadow for some depth */
+  overflow: hidden;           /* Hide any spillover content */
+}
+
+.pdf-viewer {
+  width: 100%;                /* Make the iframe take up the full width of its container */
+  height: 100%;               /* Make the iframe take up the full height of its container */
+  border: none;               /* Remove the default iframe border */
+}
+
+/* Error messages */
+
+.error {
+  color: #D8000C;            /* Red color for the text to make it noticeable */
+  background-color: #FFD2D2; /* Light red background for emphasis */
+  padding: 5px;              /* Some padding to give space */
+  border-radius: 4px;        /* Rounded corners for a softer look */
+  margin-top: 5px;           /* Space between the error and the input field */
+  font-size: 0.9rem;         /* A bit smaller than regular text to differentiate */
+}
+
+/* Navbar styling */
+
+.navbar {
+  padding: 0.5rem 2rem; /* Adjusts the padding of the navbar */
+}
+
+.navbar-brand {
+  font-weight: bold; /* Makes the brand name bold */
+  font-size: 1.5rem; /* Increases the size of the brand name */
+}
+
+.nav-link {
+  margin-right: 1rem; /* Adds some spacing between links */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.nav-link:hover {
+  color: #007BFF; /* Change color on hover */
+}
+
 
 /* Styling for box used in the Project component */
 .box {
@@ -52,10 +136,10 @@
 }
 
 
-.card {
+/* .card {
   padding: 2em;
 }
 
 .read-the-docs {
   color: #888;
-}
+} */
