@@ -16,6 +16,8 @@ function Footer() {
   return (
     <footer style={footerStyles}>
       <p>Footer placeholder text</p>
+      <a href="https://github.com/DaveFMiranda">Dave's GitHub</a>
+      <a href="https://www.linkedin.com/in/dave-m-9463327/">Dave's LinkedIn</a>
     </footer>
   );
 }
