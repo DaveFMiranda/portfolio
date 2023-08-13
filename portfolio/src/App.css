@@ -32,6 +32,41 @@
   }
 } */
 
+
+/* styling for the about me page */
+.imageContainer {
+  width: 20%;
+  height: 50vh; /* 50% of the viewport height */
+  display: flex;
+  align-items: center; /* vertically center */
+  justify-content: center; /* horizontally center */
+  overflow: hidden; /* in case the image exceeds the container's bounds, it won't be visible */
+
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.textContainer {
+  width: 80%;
+  padding: 1rem; /* optional padding for the text */
+}
+
+.imageContainer img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* keeps the aspect ratio of the image while filling the dimension */
+  align-items: flex-start;
+}
+
+.textContainer p {
+  font-size: 1.5em; /* makes the text larger */
+  font-weight: bold; /* makes the text bold */
+  margin: 0; /* removes default margin */
+  text-align: left;
+}
 /* styling for the resume pdf on the resume page */
 
 .pdf-container {
