@@ -10,9 +10,9 @@ function App() {
 
   return (
     <div>
-      <Header />
+      <Header fixed="top"/>
       <Outlet />
-      <Footer />
+      <Footer fixed="bottom"/>
     {/* {DisplaySwitch(displayState)} */}
     </div>
   );

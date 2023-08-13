@@ -1,19 +1,25 @@
 import Project from "../components/Project";
+import { projects } from "../data/projects";
 
 export default function Portfolio() {
-    return (
+  return (
     <div>
-        <h1>Here's the project page</h1>;
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-        {/* insert picture of project 2
-           type=img scr= ../assets/project1 */}
-        <Project />
-        <Project />
-        </div>
-    );
+      <h1>Here's the project page</h1>
+      {projects.map(({ name, description, img, ghLink, deployLink }) => (
+        <Project
+          key={name}
+          name={name}
+          description={description}
+          img={img}
+          ghLink={ghLink}
+          deployLink={deployLink}
+        />
+      ))}
+    </div>
+  );
+
+  
+
 
 
 }
