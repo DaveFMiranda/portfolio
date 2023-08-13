@@ -8,6 +8,8 @@ export default function Portfolio() {
         <Project />
         <Project />
         <Project />
+        {/* insert picture of project 2
+           type=img scr= ../assets/project1 */}
         <Project />
         <Project />
         </div>
