@@ -9,10 +9,10 @@ export const projects = [
    
     {
       name: "Bite Buddy",
-      description: "",
-      img: "ff",
-      ghLink: "fff",
-      deployLink: "fff",
+      description: "Upload bug bites and get help learning what bit you",
+      img: "../assets/bite-buddy",
+      ghLink: "https://github.com/DaveFMiranda/bite-buddy",
+      deployLink: "https://bite-buddy23-22fb9ad56b45.herokuapp.com/",
     },
     {
       name: "Carbon Tracker",

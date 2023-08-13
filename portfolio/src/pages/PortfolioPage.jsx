@@ -1,17 +1,22 @@
 import Project from "../components/Project";
-import projects from "../data/projects"
+import { projects } from "../data/projects";
 
 export default function Portfolio() {
-    return (
+  return (
     <div>
-        <h1>Here's the project page</h1>
-     {Projects.map(({name, description, img, ghLink, deployLink}) => <Project />
-     
-     )}
-        </div>
-    );
-
-
+      <h1>Here's the project page</h1>
+      {projects.map(({ name, description, img, ghLink, deployLink }) => (
+        <Project
+          key={name}
+          name={name}
+          description={description}
+          img={img}
+          ghLink={ghLink}
+          deployLink={deployLink}
+        />
+      ))}
+    </div>
+  );
 }
 
 // // This is a static page mocking an "About Us" section for our fake user data
