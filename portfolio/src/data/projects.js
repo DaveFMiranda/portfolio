@@ -1,5 +1,10 @@
+import biteBuddyImage from '../assets/bite-buddy.png';
+
+
 export const projects = [
-    {
+  
+  
+  {
       name: "Job Huntr",
       description: "project 3 to be inserted",
       img: "ff",
@@ -10,7 +15,7 @@ export const projects = [
     {
       name: "Bite Buddy",
       description: "Upload bug bites and get help learning what bit you",
-      img: "../assets/bite-buddy",
+      img: biteBuddyImage,
       ghLink: "https://github.com/DaveFMiranda/bite-buddy",
       deployLink: "https://bite-buddy23-22fb9ad56b45.herokuapp.com/",
     },

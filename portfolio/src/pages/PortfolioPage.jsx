@@ -5,6 +5,8 @@ export default function Portfolio() {
   return (
     <div>
       <h1>Here's the project page</h1>
+      <div className = 'box-container'>
+
       {projects.map(({ name, description, img, ghLink, deployLink }) => (
         <Project
           key={name}
@@ -15,6 +17,7 @@ export default function Portfolio() {
           deployLink={deployLink}
         />
       ))}
+    </div>
     </div>
   );
 
