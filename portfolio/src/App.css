@@ -32,6 +32,24 @@
   }
 } */
 
+/* App.jsx styling */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+}
+
+.footer {
+  flex-shrink: 0; /* Ensure the footer doesn't shrink smaller than its content */
+}
+
 
 /* styling for the about me page */
 .imageContainer {
@@ -131,21 +149,27 @@
   width: 30%;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   min-width: 200px;
+  box-sizing: border-box;
 }
 
-.box img {
-  width: 100%;    /* take full width */
-  height: 100%;   /* take full height */
-  display: block; /* to remove any space below the image */
-  object-fit: cover; /* this will ensure that the image covers the space without distorting */
+.box-content img {
+  width: 100%;    
+  height: 100%;   
+  display: block; 
+  object-fit: contain;
+  max-height: calc(100% - 2em);
 }
 
-.box h2 {
+.box-header h2 {
   font-size: 20px;
   margin-bottom: 10px;
 }
 
-
+.link-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em; 
+}
 
 
 /* .card {

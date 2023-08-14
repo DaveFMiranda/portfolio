@@ -4,7 +4,7 @@ import { projects } from "../data/projects";
 export default function Portfolio() {
   return (
     <div>
-      <h1>Here's the project page</h1>
+      <h1>Recent Projects</h1>
       <div className = 'box-container'>
 
       {projects.map(({ name, description, img, ghLink, deployLink }) => (

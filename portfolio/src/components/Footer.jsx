@@ -4,7 +4,7 @@ const footerStyles = {
   color: '#fff',
   textAlign: 'center',
   padding: '1rem',
-  position: 'absolute',
+  position: 'fixed',
   bottom: '0',
   width: '100%',
   borderTop: '1px solid #e7e7e7'
@@ -15,10 +15,11 @@ const footerStyles = {
 function Footer() {
   return (
     <footer style={footerStyles}>
-      <p>Footer placeholder text</p>
+      <div className='link-container'>
       <a href="https://github.com/DaveFMiranda">Dave's GitHub</a>
       <a href="https://www.linkedin.com/in/dave-m-9463327/">Dave's LinkedIn</a>
-e    </footer>
+      </div>
+    </footer>
   );
 }
 

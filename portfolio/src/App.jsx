@@ -9,10 +9,12 @@ function App() {
 // TO DO: INSERT STUFF FROM NOTES
 
   return (
-    <div>
-      <Header fixed="top"/>
+    <div className='app-container'>
+      <Header />
+      <div className='content'>
       <Outlet />
-      <Footer fixed="bottom"/>
+      </div>
+      <Footer />
     {/* {DisplaySwitch(displayState)} */}
     </div>
   );
