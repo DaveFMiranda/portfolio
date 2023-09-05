@@ -3,6 +3,8 @@ import carbonTrackerImage from '../assets/carbon-tracker.png'
 import techBlogImage from '../assets/tech-blog.png'
 import noteTakerImage from '../assets/note-taker.png'
 import weatherDashboardImage from '../assets/weather-dashboard.png'
+import jobHuntrImage from '../assets/job-huntr.png'
+
 
 
 
@@ -11,10 +13,10 @@ export const projects = [
   
   {
       name: "Job Huntr",
-      description: "project 3 to be inserted",
-      img: "screenshot to be inserted here",
-      ghLink: "to be inserted",
-      deployLink: "to be inserted",
+      description: "Help organize your job search",
+      img: jobHuntrImage,
+      ghLink: "https://github.com/DaveFMiranda/job-huntr",
+      deployLink: "https://job-huntr-e0fcb23b9575.herokuapp.com/",
     },
    
     {
